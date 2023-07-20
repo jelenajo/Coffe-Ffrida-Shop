@@ -1,0 +1,366 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap");
+/*Variables*/
+/**Mixin*/ /**Basic*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444645;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Amatic SC", cursive;
+}
+
+h2 {
+  color: #facb36;
+  font-size: 4rem;
+}
+
+h3 {
+  color: #facb36;
+  font-size: 2.9rem;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+
+.btn {
+  padding: 10px 40px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.4s ease;
+}
+
+.btn-yellow {
+  background: #facb36;
+  color: #444645;
+}
+.btn-yellow:hover {
+  background: black;
+  color: #facb36;
+}
+
+.btn-yellow-outline {
+  color: #facb36;
+  background: transparent;
+  border: 2px solid #facb36;
+}
+.btn-yellow-outline:hover {
+  background: #facb36;
+  color: black;
+}
+
+.btn-black {
+  color: #facb36;
+  background: transparent;
+  border: 2px solid #facb36;
+  transition: 0.4s ease;
+  border-radius: 0;
+  padding: 10px 130px;
+}
+.btn-black:hover {
+  background: #facb36;
+  color: white;
+  border: 2px solid #facb36;
+}
+
+a {
+  text-decoration: none;
+  color: #facb36;
+  transition: 0.4s ease;
+}
+a:hover {
+  color: yellow;
+}
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.py {
+  padding: 80px 0;
+}
+
+/*Header**/
+header {
+  background-image: url(img/coffee\ slajd\ 1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header nav {
+  background: rgba(0, 0, 0, 0.8);
+}
+header nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul a {
+  margin-left: 30px;
+}
+header .hgroup {
+  padding: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header .hgroup h1 {
+  font-size: 7rem;
+  color: #facb36;
+}
+header .hgroup p {
+  color: white;
+  font-size: 2.3rem;
+}
+
+/**MENU*/
+.menu {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu div:first-child {
+  flex: 0 0 60%;
+}
+@media (max-width: 767px) {
+  .menu div:first-child {
+    flex: 0 0 100%;
+    padding-top: 30px;
+  }
+}
+.menu div:first-child h2 {
+  margin-bottom: 50px;
+}
+.menu div:first-child .row {
+  padding: 100px 100px 50px 10px;
+}
+@media (max-width767px) {
+  .menu div:first-child .row {
+    padding: 20px;
+  }
+}
+.menu div:first-child .row .col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu div:first-child .row .col .menu-item {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 50%;
+}
+@media (max-width: 767px) {
+  .menu div:first-child .row .col .menu-item {
+    flex: 0 0 100%;
+  }
+}
+.menu div:first-child .row .col .menu-item .img {
+  flex: 0 0 40%;
+}
+.menu div:first-child .row .col .menu-item .img img {
+  width: 100px;
+  height: auto;
+  border-radius: 100px;
+}
+.menu div:first-child .row .col .menu-item .text {
+  flex: 0 0 60%;
+}
+.menu div:first-child .row .col .menu-item .text p {
+  color: white;
+  padding: 10px 0;
+}
+.menu div:first-child .row .col .menu-item .text span {
+  color: #facb36;
+  font-weight: bold;
+}
+.menu div:last-child {
+  flex: 0 0 40%;
+}
+@media (max-width: 767px) {
+  .menu div:last-child {
+    flex: 0 0 100%;
+  }
+}
+
+/**Usluge**/
+.usluge article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.usluge article div {
+  flex: 0 0 50%;
+}
+@media (max-width: 767px) {
+  .usluge article div {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+}
+.usluge article div p {
+  text-align: justify;
+  padding: 10px;
+  color: black;
+}
+
+/**Poruci**/
+.poruci {
+  background: linear-gradient(to right, rgba(68, 70, 69, 0.9), rgba(252, 244, 174, 0.99)), url(img/coffee\ 5.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+.poruci div {
+  width: 70%;
+}
+.poruci div p {
+  color: white;
+  margin-top: 20px;
+}
+
+/**Kontakt**/
+.kontakt h2 {
+  margin-bottom: 20px;
+}
+.kontakt div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.kontakt div ul li {
+  margin-bottom: 30px;
+}
+.kontakt div ul li i {
+  color: #facb36;
+  font-size: 1.4rem;
+  margin-right: 15px;
+}
+.kontakt div form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.kontakt div form input {
+  flex: 0 0 48%;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .kontakt div form input {
+    flex: 0 0 100%;
+  }
+}
+.kontakt div form textarea {
+  margin-top: 10px;
+  flex: 0 0 100%;
+  padding: 14px;
+  margin-bottom: 40px;
+}
+.kontakt div form ::-moz-placeholder {
+  color: #facb36;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.kontakt div form ::placeholder {
+  color: #facb36;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/***FOOTER*/
+footer {
+  color: white;
+  background-color: black;
+}
+footer p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+footer form input {
+  padding: 10px 110px;
+}
+@media (max-width: 767px) {
+  footer form input {
+    padding: 10px 73px;
+    margin-bottom: 10px;
+  }
+}
+footer form ::-moz-placeholder {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #facb36;
+}
+footer form ::placeholder {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #facb36;
+}
+footer div p {
+  margin-top: 10px;
+}
+footer div span {
+  color: #facb36;
+}
+
+/**CARD*/
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card article {
+  flex: 0 0 30%;
+}
+.card article p {
+  text-align: justify;
+  margin-top: 15px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,211 @@
+@import 'wars.scss';
+@import 'mixins.scss';
+@import 'global.scss';
+/*Header**/
+header {
+    background-image: url(img/coffee\ slajd\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    nav {
+        background: rgba($black, 0.8);
+        .container {
+            @include flex;
+        }
+        ul {
+            @include flex;
+            a {
+                margin-left: 30px;
+            }
+        }
+    }
+    .hgroup {
+        padding: 300px;
+        @include flex($direction:column);
+        h1 {
+            font-size: 7rem;
+            color: $accents;
+        }
+        p {
+            color: $white;
+            font-size: 2.3rem;            
+        }
+    }
+    
+}
+/**MENU*/
+.menu {
+    background:$black;
+    @include flex;
+   
+   div:first-child {
+    flex: 0 0 60%;
+    @media (max-width:767px){
+        flex: 0 0 100%;
+        padding-top: 30px;
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    .row {
+        padding: 100px 100px 50px 10px;
+        @media (max-width767px){
+            padding: 20px;
+        }
+        .col {
+            @include flex;
+            .menu-item {
+                margin-bottom: 50px;
+                @include flex;
+                flex: 0 0 50%;
+                @media (max-width:767px){
+                    flex: 0 0 100%;
+                }
+                .img {
+                    flex: 0 0 40%;
+                    img {
+                        width: 100px;
+                        height: auto;
+                        border-radius: 100px;
+                    }
+                }
+                .text {
+                    flex: 0 0 60%;
+                    p {
+                        color: $white;
+                        padding: 10px 0;
+                    }
+                    span {
+                        color: $accents;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+   }   
+   div:last-child {
+    flex: 0 0 40%;
+    @media (max-width:767px){
+        flex: 0 0 100%;
+    }
+   }    
+}
+/**Usluge**/
+.usluge{
+    article {
+        @include flex;
+        div {
+            flex: 0 0 50%;
+            @media (max-width:767px){
+                flex: 0 0 100%;
+                margin-bottom: 10px;
+            }
+            p {
+                text-align: justify;
+                padding: 10px;
+                color: $black;
+            }
+        }
+    }
+}
+/**Poruci**/
+.poruci {
+    background:linear-gradient(to right,rgba($text,0.9), rgba($bg,0.99)), url(img/coffee\ 5.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    div {
+        width: 70%;
+        p {
+            color: $white;
+            margin-top: 20px;
+        }
+    }
+}
+/**Kontakt**/
+.kontakt {
+    h2 {
+        margin-bottom: 20px;
+    }
+    div {
+        @include flex($align: flex-start);
+        ul {
+            li {
+                margin-bottom: 30px;
+                i {
+                    color: $accents;
+                    font-size: 1.4rem;
+                    margin-right: 15px;
+                }
+            }
+        }
+        form {
+            @include flex($align:flex-start);
+            input {
+                flex: 0 0 48%;
+                padding: 10px;
+                @media (max-width:767px){
+                    flex: 0 0 100%;
+                }
+            }
+            textarea {
+                margin-top: 10px;
+                flex: 0 0 100%;
+                padding: 14px;
+                margin-bottom: 40px;
+
+            }
+            ::placeholder {
+                color: $accents;
+                font-weight: 600; 
+                text-transform: uppercase;           
+            }
+        
+        }
+        
+    }
+}
+/***FOOTER*/
+footer {
+    color: $white;
+    background-color: black;
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    form {
+        input {
+            padding: 10px 110px;
+            @media (max-width:767px){
+                padding: 10px 73px;
+                margin-bottom: 10px;
+            }
+        }
+        ::placeholder {
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $accents;
+        }
+      
+    }
+    div {
+        p {
+            margin-top: 10px;
+        }
+        span {
+            color: $accents;
+        }
+    }
+}
+    
+/**CARD*/
+.card {
+    @include flex;
+    article {
+        flex: 0 0 30%;
+        p {
+            text-align: justify;
+            margin-top: 15px;
+        }
+    }
+}

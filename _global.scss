@@ -1,0 +1,87 @@
+
+/**Basic*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body {
+    color: $text;
+    font-size: $fontSize;
+    font-family: $bodyFont;
+}
+h1,h2,h3,h4 {
+    font-family: $heading;
+}
+h2 {
+    color: $accents;
+    font-size: 4rem;
+}
+h3 {
+    color: $accents;
+    font-size: 2.9rem;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+.btn {
+    padding: 10px 40px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: $transition;
+}
+.btn-yellow {
+    background: $accents;
+    color: $text;
+    &:hover{
+        background: $black;
+        color: $accents;
+    }
+}
+.btn-yellow-outline {
+    color: $accents;
+    background: transparent;
+    border: 2px solid $accents;
+    &:hover {
+        background: $accents;
+        color: $black;
+    }
+}
+.btn-black {
+    color: $accents;
+    background: transparent;
+    border: 2px solid $accents;
+    transition: $transition;
+    border-radius: 0;
+    padding:10px 130px;
+    &:hover {
+        background: $accents;
+        color: $white;
+        border: 2px solid $accents;
+    }
+}
+a {
+    text-decoration: none;
+    color: $accents;
+    transition: $transition;
+    &:hover {
+        color: yellow;
+    }
+}
+ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.py {
+    padding: 80px 0;
+}
